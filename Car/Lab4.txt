@@ -1,0 +1,39 @@
+
+public class Person1 {
+    private String firstName;
+    private String lastName;
+    private int age;
+    private String job;
+
+    public Person1(String firstName, String lastName, int age, String job) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.job = job;
+    }
+
+    public void showInfo() {
+        System.out.println("Full name:" + this.firstName + " " + this.lastName + "Age:" + this.age + "Job:" + this.job);
+    }
+}
+//
+
+public class Car {
+    private Person1 owner;
+    private String color;
+    private String model;
+
+    public Car(Person1 owner,String color,String model){
+        this.owner=owner;
+        this.color=color;
+        this.model=model;
+    }
+
+    public void changeOwner(Person1 newOwner) {
+        this.owner=newOwner;}
+
+    public Person1
+    getOwner() {
+        return this.owner;
+    }
+}
